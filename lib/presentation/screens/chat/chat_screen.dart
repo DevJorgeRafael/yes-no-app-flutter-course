@@ -19,7 +19,7 @@ class ChatScreen extends StatelessWidget {
             backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkEw0X0c3ZxiwynhUvLUu_XayFzK7m3fyeHQ&s'),
           ),
         ),
-        title: const Text('Mi amor ❤️'),
+        title: const Text('Nicki Nicole ❤️'),
       ),
       body: _ChatView(),
     );
@@ -44,7 +44,7 @@ class _ChatView extends StatelessWidget {
                 final message = chatProvider.messageList[index];
 
                 return (message.fromWho == FromWho.hers ) 
-                ? HerMessageBuble() : MyMessageBuble( message: message );
+                ? HerMessageBuble( message: message ) : MyMessageBuble( message: message );
 
               },
             ),),
